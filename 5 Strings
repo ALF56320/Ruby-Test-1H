@@ -1,0 +1,44 @@
+Une chaîne est une collection de caractères/symboles entre guillemets. Les chaînes sont interprétées par l'ordinateur comme du texte brut.
+
+Vous pouvez utiliser des guillemets simples ou des guillemets doubles pour les chaînes - l'un ou l'autre est acceptable.
+
+myFirstString = 'I am a string!' #single quotes
+mySecondString = "Me too!" #double quotes
+La première ligne crée une variable myFirstString qui contient la chaîne de caractères "I am a string!" en utilisant des guillemets simples. 
+Les guillemets simples sont souvent utilisés pour les chaînes de caractères simples qui ne nécessitent pas d'interpolation de variables 
+ou d'insertion de caractères spéciaux.
+
+La deuxième ligne crée une variable mySecondString qui contient la chaîne de caractères "Me too!" en utilisant des guillemets doubles.
+Les guillemets doubles sont souvent utilisés pour les chaînes de caractères qui nécessitent l'insertion de variables ou de caractères spéciaux 
+comme des sauts de ligne ou des tabulations.
+
+En général, les guillemets simples et doubles sont interchangeables pour les chaînes de caractères simples, 
+mais il est important de choisir le type de guillemet qui convient le mieux en fonction des besoins de votre code.
+Il existe de nombreuses méthodes intégrées dans Ruby pour manipuler les chaînes.
+
+.lengthvous donnera le nombre de caractères dans une chaîne.
+
+"Hi!".length #is 3
+.reverserenversera la ficelle.
+
+"Hi!".reverse #is !iH
+.upcasefera une chaîne tout en majuscules.
+
+"Hi!".upcase #is HI!
+et .downcasefera une chaîne tout en minuscules.
+
+"Hi!".downcase #is hi!
+Vous pouvez également utiliser plusieurs méthodes à la fois. Ils sont résolus de gauche à droite.
+
+"Hi!".downcase.reverse #is !ih
+Si vous voulez vérifier si une chaîne contient une autre chaîne, vous pouvez utiliser ..include?
+
+"Happy Birthday!".include?("Happy")
+Le code ci-dessus est évalué à true.
+
+Exercer
+Prenez la chaîne donnée et utilisez des méthodes pour que le code affiche "!edoc ma i !ih".
+
+myString = "Hi! I am code!".downcase.reverse   #In the next line, use methods to change it.
+myNewString = myString
+puts myNewString
