@@ -1,0 +1,43 @@
+Les méthodes sont des sections de code réutilisables qui effectuent des tâches spécifiques dans notre programme.
+L'utilisation de méthodes signifie que nous pouvons écrire un code plus simple et plus facilement lisible.
+
+En Ruby, les méthodes ressemblent à ceci :
+
+def methodname
+    # method code here
+end
+Ceci est la structure de base pour définir une méthode en Ruby. 
+Vous pouvez remplacer "methodname" par le nom de votre choix et écrire le code que vous souhaitez exécuter à l'intérieur de la méthode :
+
+ruby
+Copy code
+def methodname
+  # code à exécuter dans la méthode
+end
+Par exemple, si vous souhaitez créer une méthode pour afficher "Hello World!" à la console, vous pouvez écrire :
+
+ruby
+Copy code
+def say_hello
+  puts "Hello World!"
+end
+Ensuite, pour appeler cette méthode, vous pouvez simplement écrire son nom :
+
+ruby
+Copy code
+say_hello
+Ce qui affichera "Hello World!" à la console.
+Le defmot-clé commence l'en-tête de la méthode. Cela inclura le nom de la méthode ainsi que tous les paramètres
+que la méthode prendra (si nous voulons qu'ils en aient). 
+Le corps de la méthode contiendra le code que nous voulons que la méthode exécute. La méthode se termine par le endmot clé.
+
+Maintenant que nous avons une méthode définie, pour qu'elle accomplisse sa tâche, nous devons l'appeler
+. Pour appeler une méthode définie, nous tapons simplement le nom de la méthode dans notre programme. Par exemple, taper methodnameappellera notre méthode.
+
+Exercer
+À l'aide du code fourni, créez une méthode appelée say_hi" putsSalut !" à la console. (N'oubliez pas de l'appeler !)
+def say_hi
+    puts "Hi!"
+end
+
+say_hi
