@@ -1,0 +1,39 @@
+As you start to write more complicated programs, it will become necessary to start using comments. 
+Comments allows you to add explanations to your code, so that other developers (and you) can always understand what a particular piece of code is for. 
+It's good practice to comment your code extensively.
+
+There are two types of comments, multi-line comments, and single-line comments. 
+Single-line are started with # and multi-line comments are started with =begin and ended with =end.
+
+=begin
+I'm a comment!
+=end
+Single-line comments can be started after another thing in the same line.
+
+puts "Hi!" #I'm a comment, but Hi! will still be printed to the console.
+La première section, qui commence par =begin et se termine par =end, est un commentaire multi-lignes.
+Tout ce qui se trouve entre ces deux marqueurs sera ignoré par l'interpréteur Ruby. Cela permet de fournir des explications, 
+des notes ou des instructions pour les autres programmeurs ou pour soi-même.
+
+La deuxième section est un exemple de commentaire sur une seule ligne.
+Tout ce qui suit le symbole # sera considéré comme un commentaire et ignoré par l'interpréteur Ruby. Cela permet d'ajouter des notes rapides
+ou de désactiver temporairement une ligne de code sans la supprimer complètement.
+
+Enfin, il est important de noter que les commentaires ne sont pas exécutés par l'interpréteur Ruby et
+ne produisent aucun effet sur le code qui est réellement exécuté.
+
+Exercise
+Using whichever method you prefer, comment everything out EXCEPT "Don't comment me out!" still needs to be printed out.
+
+
+=begin
+puts "Hi!"
+puts "Hi!"
+puts "Hi!"
+puts "Hi!"
+=end
+puts "Don't comment me out!"
+=begin
+puts "Hi!"
+puts "Hi!"
+=end
