@@ -1,0 +1,58 @@
+  Les conditions sont utilisées pour ajouter une logique de branchement à vos programmes ; ils vous permettent d'inclure un comportement complexe qui ne se produit que dans des conditions spécifiques.
+
+Voici la syntaxe d'une ifinstruction :
+
+if condition
+  something to be done
+end
+conditionest une expression dont la véracité peut être vérifiée. Si l'expression est évaluée à true, alors le code dans le bloc est exécuté.
+
+Voici quelques exemples d'expressions qui évaluent true:
+
+3 < 4
+true
+"cat" == "cat"
+Vous pouvez combiner ifavec le mot-clé else. Cela vous permet d'exécuter un bloc de code si la condition est true,
+et un bloc différent si c'est le cas false.
+
+if condition
+  something to be done
+else
+  something to be done if the condition evaluates to false
+end
+Le elsebloc ne sera exécuté que si le ifbloc ne s'exécute pas, donc ils ne seront jamais exécutés tous les deux.
+
+Lorsque vous voulez plus de deux options, vous pouvez utiliser elsif. Cela vous permet d'ajouter plus de conditions à vérifier.
+
+Voici la syntaxe de l'instruction if/elsif/else :
+
+if condition
+  something to be done
+elsif different condition
+  something else to be done
+else
+  another different thing to be done
+end
+Un seul des blocs de code sera toujours exécuté, car l'instruction n'exécute que le code dans le premier bloc applicable ;
+Une fois qu'une condition est satisfaite, toute l'instruction se termine.
+
+Vous trouverez ci-dessous un exemple concret d' ifinstruction contenant à la fois un elsifet un else.
+
+booleanOne = true
+randomCode = "Hi!"
+if booleanOne
+  puts "I will be printed!"
+elsif randomCode.length>=1
+  puts "Even though the above code is true, I won't be executed because the earlier if statement was true!"
+else
+  puts "I won't be printed because the if statement was executed!"
+end
+
+language = "Spanish"
+if language === "English"
+  puts "Hello!"
+Elsif language === "Spanish"
+    puts "Hola!"
+else 
+    puts " I don't that language!"
+end 
