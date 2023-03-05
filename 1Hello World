@@ -1,0 +1,35 @@
+Bonjour le monde
+L'une des tâches les plus élémentaires de tout langage de programmation consiste à afficher des informations à l'utilisateur.
+Pour imprimer quelque chose sur la console afin que l'utilisateur puisse le voir, utilisez puts.
+
+puts "I will be printed to the console!"
+Tout ce qui se trouve entre les guillemets sera imprimé sur la console.
+
+Vous pouvez utiliser des guillemets simples ( ') ou doubles ( ) avec , tant que vous êtes cohérent."puts
+
+Au lieu d'écrire puts, vous pouvez utiliser la forme plus courte, p.
+
+p 'Hello world'
+Vous pouvez également utiliser printpour afficher des informations. La différence entre putset printest que lorsque vous utilisez le putsmot-clé,
+Ruby ajoute une nouvelle ligne (' \n ') à la fin. Ruby ne fait pas cela avec print.
+
+puts 'Hello World !!!'
+Hello World !!!
+=> nil
+
+ print 'Hello World !!!'
+ Hello World !!!=> nil
+ La première ligne, puts 'Hello World !!!', utilise la méthode puts pour imprimer la chaîne de caractères "Hello World !!!" à la console et
+ ajoute une nouvelle ligne à la fin. Le résultat renvoyé est nil,
+ ce qui signifie que cette ligne de code ne renvoie pas de valeur utile mais est simplement utilisée pour afficher quelque chose à l'écran.
+
+La deuxième ligne, print 'Hello World !!!', utilise la méthode print pour imprimer la même chaîne de caractères "Hello World !!!" 
+à la console mais sans ajouter une nouvelle ligne à la fin. Le résultat renvoyé est également nil, ce qui signifie 
+que cette ligne de code ne renvoie pas de valeur utile mais est simplement utilisée pour afficher quelque chose à l'écran.
+Exercer
+Imprimer "Bonjour, monde !" à la console à l'aide de puts.
+
+puts "Hello World"
+------------------------------------------------------------------------
+#Fix This!
+puts 'Hello, World!'
