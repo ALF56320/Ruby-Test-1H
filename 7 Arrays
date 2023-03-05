@@ -1,0 +1,40 @@
+Les tableaux vous permettent de regrouper plusieurs valeurs dans une liste. 
+Chaque valeur d'un tableau est appelée "élément".
+
+Le code ci-dessous montre comment créer des tableaux :
+
+myArray = []  # an empty array
+myOtherArray = [1, 2, 3]  # an array with three elements
+Les éléments sont numérotés à partir de zéro et sont accessibles par leur numéro. est la façon dont vous accéderiez au deuxième élément d'un tableau.myOtherArray[1]
+
+Pour ajouter ou modifier des éléments dans un tableau, vous pouvez faire référence à un élément par numéro.
+
+myOtherArray[3] = 4
+Cette ligne de code essaie de modifier le quatrième élément d'un tableau appelé myOtherArray.
+
+La syntaxe [3] est utilisée pour accéder au quatrième élément du tableau,
+car les indices de tableau en Ruby commencent à 0. 
+Ainsi, [0] est utilisé pour accéder au premier élément, [1] pour accéder au deuxième élément et ainsi de suite.
+
+Le code essaie de définir la valeur de l'élément du tableau à l'indice 3 (c'est-à-dire le quatrième élément) sur 4.
+Si l'élément existe déjà à cet indice, sa valeur sera remplacée par 4.
+Si l'indice 3 n'est pas encore défini dans le tableau, 
+cette opération l'ajoutera au tableau avec une longueur suffisante pour stocker la valeur 4 à cet indice.
+
+Il est important de noter que cette ligne de code ne fonctionnera que 
+si la variable myOtherArray a été préalablement définie en tant que tableau.
+Sinon, cela entraînera une erreur.
+
+Exercer
+En utilisant le code fourni, print"Me!" à la console.
+myArray = ["Not me!", "Not me!", "Me!", "Not me!"]
+print myArray[2]
+Ce code crée un tableau appelé myArray qui contient quatre éléments, dont le troisième est la chaîne de caractères "Me!".
+
+La première ligne crée le tableau en utilisant la notation [...] pour définir les éléments du tableau.
+Les éléments sont séparés par des virgules, et les guillemets doubles sont utilisés pour créer des chaînes de caractères.
+
+La deuxième ligne utilise la fonction print pour imprimer l'élément du tableau qui se trouve à l'indice 2. 
+Comme les indices de tableau commencent à 0 en Ruby, l'indice 2 correspond au troisième élément du tableau, qui est "Me!".
+
+Le résultat imprimé sera "Me!" sans guillemets ou autres caractères supplémentaires.
