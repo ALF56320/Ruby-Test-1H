@@ -1,0 +1,102 @@
+                                                                  SAUF si  = Unless
+Le code ci-dessus utilise une structure de contrôle unless pour exécuter un bloc de code si une condition est fausse. 
+Le bloc de code sera exécuté si et seulement si la condition est fausse.
+
+La condition est spécifiée après le mot clé unless. Si la condition est évaluée à false, alors le bloc de code suivant unless est exécuté.
+Si la condition est évaluée à true, alors le bloc de code ne sera pas exécuté.
+
+La structure de contrôle unless est similaire à la structure de contrôle if, mais inverse la logique.
+En effet, le bloc de code est exécuté si la condition est fausse, alors que pour if le bloc de code est exécuté si la condition est vraie.
+
+Voici un exemple de code qui utilise unless :
+
+ruby
+Copy code
+age = 17
+unless age >= 18
+  puts "You are not old enough to vote!"
+end
+Dans cet exemple, le bloc de code suivant unless sera exécuté car la condition age >= 18 est évaluée à false puisque age est égal à 17.
+Ainsi, le texte "You are not old enough to vote!" sera imprimé à la console.
+
+Notez que l'on pourrait également écrire ce code avec une structure if en utilisant la négation de la condition :
+
+c
+Copy code
+age = 17
+if !(age >= 18)
+  puts "You are not old enough to vote!"
+end
+Le résultat serait le même, mais l'utilisation de unless permet de simplifier la lecture du code en évitant la négation.
+
+
+                                                          Jusqu'à = Until
+Le code que vous avez fourni utilise une structure de boucle while pour répéter un bloc de code tant qu'une condition est vraie.
+
+La condition est spécifiée après le mot clé while. Tant que cette condition est vraie,
+le bloc de code suivant while sera répété en boucle. Lorsque la condition devient fausse, le programme sortira de la boucle et continuera l'exécution du code suivant.
+
+Voici un exemple de code qui utilise while :
+
+css
+Copy code
+i = 0
+while i < 5
+  puts i
+  i += 1
+end
+Dans cet exemple, la boucle while va répéter le bloc de code tant que la valeur de i est inférieure à 5. 
+Au début, i est égal à 0, ce qui satisfait la condition. Le code suivant la boucle imprime la valeur de i, qui est actuellement 0. 
+Ensuite, i est incrémenté de 1. La boucle est répétée et cette fois-ci, la valeur de i est 1, ce qui satisfait encore la condition. 
+La valeur de i est imprimée et i est incrémenté de 1 à nouveau. La boucle est répétée jusqu'à ce que i atteigne 5, qui ne satisfait plus la condition, 
+et la boucle est interrompue.
+
+Le résultat affiché dans la console sera :
+
+Copy code
+0
+1
+2
+3
+4
+Notez que la boucle while doit être utilisée avec précaution, car si la condition n'est jamais fausse, la boucle continuera indéfiniment,
+ce qui peut entraîner un blocage de l'application ou de l'ordinateur.
+                                                      
+                                                          
+                                                            Tant que = While 
+
+
+' unlessinstruction est structurée de la même manière qu'une ifinstruction.
+
+unless condition
+  #thing to be done if the condition is false
+end
+C'est fondamentalement l'inverse de l'instruction if, car ifles instructions ne seront effectuées que si la condition est true,
+mais l' unlessinstruction ne sera effectuée que si la condition est false.
+Le elsemot-clé peut également être utilisé à l'intérieur unlessd'instructions.
+
+whileles instructions répètent un bloc de code tant qu'une condition est true.
+
+while condition
+    #something to do
+end
+untilles déclarations sont le contraire des whiledéclarations ; ils se répètent jusqu'à ce qu'une condition devienne true.
+Voici leur syntaxe :
+
+until condition
+    #something to do
+end
+Important!
+Assurez-vous de ne pas faire une boucle infinie . Une boucle infinie se répète indéfiniment, empêchant votre programme d'avancer, 
+car la condition ne change jamais en ce qui arrêtera la boucle. Exercer
+
+Faites un moment ou jusqu'à ce que la déclaration à partir de zéro qui sera puts"Je suis en boucle!" à la console 7 fois.
+
+i = 0
+while i < 7
+  puts "I'm looping!"
+  i += 1
+end
+Oui, cette boucle while va afficher "I'm looping!" à la console 7 fois, car elle répète le bloc de code tant que la valeur de i est inférieure à 7, et à chaque itération de la boucle, la valeur de i est incrémentée de 1.
+
+La première fois que la boucle est exécutée, la valeur de i est 0, ce qui satisfait la condition de la boucle while. Le code à l'intérieur de la boucle est alors exécuté, ce qui affiche "I'm looping!" à la console. Ensuite, la valeur de i est incrémentée de 1. La boucle est répétée tant que i est inférieur à 7.
