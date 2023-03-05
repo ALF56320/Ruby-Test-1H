@@ -1,0 +1,66 @@
+Tout comme les tableaux, les hachages vous permettent de stocker plusieurs valeurs ensemble. Cependant, alors que les tableaux stockent des valeurs avec un index numérique, les hachages stockent des informations à l'aide de paires clé-valeur. Chaque élément d'information dans le hachage a une étiquette unique, et vous pouvez utiliser cette étiquette pour accéder à la valeur.
+
+Pour créer un hachage, utilisez , ou . Par exemple:Hash.newmyHash={}
+
+myHash={
+    "Key" => "value",
+    "Key2" => "value2"
+}
+Ce code crée un hash appelé myHash qui contient deux paires de clés-valeurs.
+
+La syntaxe {...} est utilisée pour créer un hash en Ruby. Chaque paire clé-valeur est définie à l'intérieur des accolades,
+en utilisant la syntaxe "clé" => "valeur". Les paires de clés-valeurs sont séparées par des virgules.
+
+Dans ce cas, le hash myHash contient deux paires clé-valeur : "Key" => "value" et "Key2" => "value2".
+La première paire a une clé "Key" et une valeur "value", tandis que la deuxième paire a une clé "Key2" et une valeur "value2".
+
+Il est important de noter que les clés dans un hash doivent être uniques,
+sinon une paire clé-valeur existante sera remplacée par une nouvelle paire avec la même clé. Les valeurs peuvent être dupliquées.
+Cela crée un hachage avec deux valeurs, chacune indexée avec une clé. Vous pouvez accéder à une valeur comme celle-ci :
+
+puts myHash["Key"] # puts value
+L'autre méthode de création d'un hachage est illustrée ci-dessous :
+
+myHash=Hash.new()
+myHash["Key"]="value"
+myHash["Key2"]="value2"Ce code crée un hash vide appelé myHash en utilisant la méthode Hash.new(), puis ajoute deux paires clé-valeur au hash.
+
+La méthode Hash.new() crée un nouveau hash vide sans paires clé-valeur.
+Les paires clé-valeur peuvent être ajoutées au hash en utilisant la syntaxe [clé] = valeur. 
+Dans ce cas, la première ligne ajoute une paire clé-valeur avec la clé "Key" et la valeur "value",
+tandis que la deuxième ligne ajoute une paire clé-valeur avec la clé "Key2" et la valeur "value2".
+
+Le résultat est le même que le code précédent qui utilise la syntaxe {...} pour créer un hash. 
+La seule différence est la méthode utilisée pour créer le hash vide au début.
+Au lieu d'utiliser une chaîne comme clé, vous pouvez également utiliser un symbole, comme ceci :
+
+myHash=Hash.new()
+myHash[:Key]="value"
+myHash[:Key2]="value2"
+Vous pouvez accéder à une valeur associée à un symbole de la même manière.
+
+puts myHash[:Key] # puts "value"
+Lors de l'utilisation avec des symboles, les symboles sont utilisés différemment, comme cecimyHash={}
+
+myHash={
+    Key: "value",
+    Key2: "value2",
+}
+puts myHash[:Key] # puts "value"
+Exercer
+Créez un hachage appelé myFirstHashet rendez la première clé Dadégale à Dave.
+#Make your hash below
+
+myFirstHash={
+    "Dad" => "Dave",
+    }
+
+puts myFirstHash["Dad"]
+---------------------------
+
+#Make your hash below
+myFirstHash={
+    "Dad" => "Dave",
+}
+puts myFirstHash["Dad"]
+
