@@ -1,0 +1,58 @@
+
+Pour étendre les fonctionnalités de nos méthodes, nous pouvons les définir avec des paramètres et leur fournir des arguments.
+Les paramètres sont des noms d'espace réservé que nous mettons entre les parenthèses de la méthode lorsque nous définissons
+la méthode et les arguments sont des morceaux de code que nous mettons entre les parenthèses de la méthode lorsque nous appelons la méthode. Prenons cet exemple :
+
+def clap_hands(number)
+    puts "Clap " * number
+end
+Dans cet exemple, nous passons numberen paramètre. Ensuite, dans notre méthode, nous putsle mot "Clap" à la console autant de fois que number.
+
+Tout comme les méthodes qui n'ont pas de paramètres, nous devons appeler la méthode pour qu'elle prenne effet. 
+Donc, dans cet exemple, nous appellerions notre clap_handsméthode comme suit :
+
+clap_hands(3)
+Ce serait putsla chaîne "Clap" trois fois à la console. La valeur de 3est l'argument que nous fournissons à la méthode.
+
+Exercer
+À l'aide du code fourni, créez une méthode appelée squarequi prend un paramètre number, puis putsle résultat au carré du nombre que vous passez. 
+Pour réussir le test, placez le nombre au carré 2. N'oubliez pas d'appeler la méthode !
+def clap_square(number)
+    puts "clap " * number
+end
+
+puts clap_square(2)
+---------------------------------
+def square(number)
+    puts number ** 2
+end
+
+square(2)
+
+
+
+
+
+
+
+
+
+La méthode clap_hands prend un argument number et affiche la chaîne de caractères "Clap " autant de fois que la valeur de number.
+
+Par exemple, si vous appelez clap_hands(3), la méthode va afficher "Clap Clap Clap " à la console.
+
+Voici un exemple d'utilisation de la méthode clap_hands :
+
+ruby
+Copy code
+def clap_hands(number)
+    puts "Clap " * number
+end
+
+clap_hands(5) # affiche "Clap Clap Clap Clap Clap "
+clap_hands(2) # affiche "Clap Clap "
+Dans cet exemple, la méthode clap_hands est appelée deux fois avec des valeurs d'argument différentes.
+
+
+-----------------------------------------------
+La première fois, elle affiche "Clap Clap Clap Clap Clap ", et la deuxième fois, elle affiche "Clap Clap ".
